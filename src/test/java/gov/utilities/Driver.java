@@ -25,7 +25,7 @@ public  static WebDriver driver;
 
 			case "chrome":
 				ChromeOptions options = new ChromeOptions();
-		        options.addArguments( "--headless");
+		        options.addArguments( "--disable-dev-shm-usage");
 
 		      
 				System.setProperty("webdriver.chrome.driver", Config_Reader.getProperty("chrome.driver.path"));
