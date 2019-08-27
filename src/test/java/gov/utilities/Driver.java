@@ -25,7 +25,7 @@ public  static WebDriver driver;
 
 			case "chrome":
 				ChromeOptions options = new ChromeOptions();
-		        options.addArguments( "--no-sandbox","--disable-dev-shm-usage","--whitelisted-ips=''");
+		        options.addArguments( "--no-sandbox","--whitelisted-ips=''");
 
 		      
 				System.setProperty("webdriver.chrome.driver", Config_Reader.getProperty("chrome.driver.path"));
